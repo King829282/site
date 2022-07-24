@@ -1,0 +1,69 @@
+body {
+    color: #f4f4f4;
+    background: #000;
+    transition: all 500ms ease-in-out 0s;
+}
+
+.theme-button {
+    color: #fff;
+    background-color: hsl(33deg 94% 67%);
+    border: 1px solid hsl(33deg 94% 67%);
+    transition: all 500ms ease-in-out 0s;
+}
+
+.theme-button:hover {
+    background: rgb(182, 139, 87);
+}
+
+.button {
+    color: #fff;
+    background-color: #222;
+}
+
+.menu-item {
+    color: #ccc;
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+.smart-clock-item-1 img {
+    filter: invert(1);
+}
+
+.smart-clock-item-2 img {
+    filter: invert(1);
+}
+
+#orange {
+    background-color: #222;
+}
+
+.smart-clocks-item:hover img {
+    opacity: .6;
+}
+
+.img {
+    filter: invert(1);
+}
+
+#img {
+    filter: invert(1);
+}
+
+#footer {
+    background-color: #222;
+}
+
+.footer-inner h5 {
+    opacity: 1.0;
+}
+
+.li-a {
+    color: #ccc;
+}
+
+.li-a:hover {
+    color: white;
+}

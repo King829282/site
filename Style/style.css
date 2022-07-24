@@ -1,0 +1,549 @@
+body {
+    font-family: "Roboto", san-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.theme-button {
+    top: 10px;
+    right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 20px 30px;
+    position: absolute;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* .button {
+        border: 0px;
+        color: white;
+        font-size: 20px;
+        min-width: 100px;
+        border-radius: 30%;
+        padding: 25px 30px;
+        border: 3px solid hsl(34deg 94% 66%);
+        background-color: hsl(34deg 94% 66%);
+        transition: all 500ms ease-in-out 0s;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        background: transparent;
+        color: #222;
+        box-shadow: 0 0px 16px 0 rgba(20, 16, 16, 0.822), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    } */
+
+.button {
+    width: 150px;
+    border: none;
+    padding: 15px;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 26px;
+    transition: all 0.5s;
+    display: inline-block;
+    background-color: white;
+}
+
+.button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 13em 120px 0px;
+}
+
+.menu-logo {
+    opacity: .7;
+    font-size: 23px;
+    margin-right: 23em;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin: 15px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 500ms ease-in-out 0s;
+}
+
+.menu-item:hover {
+    color: hsl(34deg 94% 62%);
+}
+
+#main {
+    display: flex;
+}
+
+.main-inner {
+    justify-content: center;
+}
+
+.main-inner img {
+    margin-left: 20vw;
+}
+
+.main-text {
+    width: 100%;
+    margin: -30em 40em;
+}
+
+.main-text h1 {
+    line-height: 70px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#h4 {
+    font-size: 25px;
+}
+
+#p {
+    opacity: .8;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#smart-clock {
+    display: flex;
+    margin-top: 40em;
+    justify-content: center;
+}
+
+.smart-clock-inner h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.smart-clock-list-1 {
+    display: flex;
+    margin: 135px;
+    flex-direction: column;
+}
+
+.smart-clock-item-1 {
+    line-height: 0;
+}
+
+.smart-clock-item-1 img {
+    width: 42px;
+}
+
+.watch-2 {
+    margin: -45em 39em;
+}
+
+.watch-2 img {
+    width: 19em;
+}
+
+.smart-clock-list-2 {
+    width: 50%;
+    display: flex;
+    margin: 198px 0;
+    margin-left: 60em;
+    flex-direction: column;
+}
+
+.smart-clock-item-2 {
+    line-height: 0;
+}
+
+.smart-clock-item-2 img {
+    width: 42px;
+}
+
+#orange {
+    width: 100%;
+    margin: 0% -5%;
+    padding: 120px;
+    background-color: hsl(51deg 94% 62% / 57%);
+}
+
+.orange-inner {
+    display: flex;
+    color: white;
+}
+
+.orange-text {
+    margin: 0 10em;
+}
+
+.orange-text h2 {
+    font-size: 40px;
+}
+
+.orange-text #p {
+    width: 80%;
+}
+
+#inside {
+    margin-top: 8em;
+}
+
+.inside-inner h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.display {
+    display: flex;
+    margin-top: 8em;
+}
+
+.display-text h3 {
+    font-size: 35px;
+}
+
+.display-text {
+    width: 50%;
+    margin: 0px 5em;
+}
+
+.health {
+    display: flex;
+    margin-top: 5em;
+}
+
+.health-text h3 {
+    font-size: 35px;
+}
+
+.health-text {
+    width: 50%;
+    margin: 0 8em;
+}
+
+#smart-clocks {
+    margin-top: 5em;
+}
+
+.smart-clocks-inner h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.smart-clocks-list {
+    display: flex;
+    margin: 5em -1em;
+}
+
+.smart-clocks-item img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 500ms ease-in-out 0s;
+}
+
+.smart-clocks-item:hover img {
+    opacity: .7;
+}
+
+#reviews {
+    margin-top: 10em;
+}
+
+.reviews-inner h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.reviews-inner .button {
+    width: 35vw;
+    margin: 10vh 32vw;
+}
+
+.review-1 {
+    margin-top: 5em;
+    display: flex;
+}
+
+.review-1-text {
+    text-align: center;
+}
+
+.review-1-text p {
+    width: 60%;
+    line-height: 25px;
+    margin-left: 16vh;
+}
+
+.review-2 {
+    margin: auto;
+}
+
+.review-2-text {
+    text-align: center;
+}
+
+.review-2-text p {
+    line-height: 25px;
+}
+
+.review-3 {
+    margin: auto;
+}
+
+.review-3-text {
+    text-align: center;
+}
+
+.review-3-text p {
+    width: 60%;
+    line-height: 25px;
+    margin-left: 15vh;
+}
+
+#span {
+    font-style: italic;
+}
+
+#img {
+    width: 23%;
+}
+
+.img {
+    width: 15%;
+}
+
+#footer {
+    padding: 14px;
+    margin: 0 -35px -10px;
+    background-color: hsl(0deg 0% 96% / 65%);
+}
+
+.footer-inner {
+    line-height: 35px;
+    text-align: center;
+}
+
+.footer-inner h5 {
+    opacity: .6;
+    font-size: 17px;
+}
+
+.footer-inner p {
+    opacity: .8;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.footer-inner ul {
+    display: flex;
+    margin-right: 25px;
+    justify-content: center;
+}
+
+.li-a {
+    opacity: 0.9;
+    padding: 15px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 500ms ease-in-out 0s;
+}
+
+.li-a:hover {
+    color: rgba(133, 127, 185, 0.89);
+}
+
+@media (max-width:768px) {
+    .theme-button {
+        position: absolute;
+        right: 10em;
+    }
+    .menu-logo {
+        margin-right: 15em;
+    }
+    .menu-item {
+        display: none;
+    }
+    #main {
+        display: block;
+    }
+    .main-inner img {
+        margin: auto;
+        display: flex;
+    }
+    .main-text {
+        margin: auto;
+        text-align: center;
+    }
+    #smart-clock {
+        display: block;
+        margin-top: 5em;
+    }
+    .smart-clock-list-1 {
+        margin: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .watch-2 {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .watch-2 img {
+        width: 15em;
+    }
+    .smart-clock-list-2 {
+        width: auto;
+        display: flex;
+        margin-top: 30px;
+        margin-left: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    #orange {
+        width: auto;
+        padding: 100px;
+        margin: -20% -14%;
+    }
+    .orange-inner {
+        display: block;
+    }
+    .orange-inner img {
+        margin: auto;
+        display: flex;
+    }
+    .orange-text {
+        margin: auto;
+        text-align: center;
+    }
+    .orange-text #p {
+        width: 105%;
+    }
+    #inside {
+        margin-top: 15em;
+    }
+    .display {
+        display: block;
+        margin-top: 5em;
+    }
+    .display img {
+        margin: auto;
+        display: flex;
+    }
+    .display-text {
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .health {
+        margin-top: 5em;
+        display: block;
+    }
+    .health-text {
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .health img {
+        margin: auto;
+        display: flex;
+        margin-top: 3em;
+    }
+    .smart-clocks-list {
+        display: block;
+        margin: auto;
+    }
+    .smart-clocks-item {
+        display: flex;
+        margin-top: 3em;
+        justify-content: center;
+    }
+    .smart-clocks-item img {
+        width: auto;
+    }
+    #reviews {
+        margin-top: 5em;
+    }
+    .review-1 {
+        display: block;
+        margin-top: 3em;
+    }
+    .review-1-text p {
+        width: 75%;
+    }
+    #img {
+        width: 15%;
+    }
+    .review-3-text p {
+        width: 80%;
+    }
+    .reviews-inner .button {
+        width: 60vw;
+        margin: auto;
+        display: flex;
+    }
+    #footer {
+        margin: 30px -15vw -10px;
+    }
+    .footer-inner {
+        line-height: 40px;
+    }
+    .footer-inner h5 {
+        font-size: 20px;
+    }
+    .li-a {
+        font-size: 20px;
+    }
+    .footer-inner p {
+        font-size: 20px;
+    }
+    .reviews-inner .button span:after {
+        top: 10px;
+    }
+}
